@@ -1,0 +1,6 @@
+version: '3'
+services:
+  api:
+    build: . # Build the API image from the Dockerfile in the current directory
+    ports:
+      - 80:7860 # Map port 80 on host to port 7860 in the container
