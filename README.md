@@ -3,11 +3,11 @@ navigate to the working directory of this project
 
 for linux
 ```bash
-cd path/to/Medical_app/
+cd path/to/sentiment-analysis/
 ```
 for windows
 ```bash
-cd path\to\Medical_app\
+cd path\to\sentiment-analysis\
 ```
 ### running docker compose
 now its time to run the compose file
