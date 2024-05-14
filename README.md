@@ -18,7 +18,7 @@ docker-compose up -d
 Now you can go to http://localhost/docs
 
 You will see the automatic interactive API documentation (provided by Swagger UI):
-![alt text](image.png)
+![alt text](image-1.png)
 
 if you want to close the container run the following commadn
 
