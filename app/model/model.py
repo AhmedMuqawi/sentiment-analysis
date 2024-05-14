@@ -303,10 +303,11 @@ def recommend_movies_by_mood_with_imdb_links(mood, num_recommendations=5) ->List
     
     # Define the mood categories dictionary
     mood_categories = {
+        "surprise": ["Action", "Adventure", "Comedy"],
         "sad": ["Drama", "Romance"],
         "happy": ["Animation", "Comedy", "Musical"],
-        "surprise": ["Drama", "Comedy", "Romance", "Action", "Adventure"],
-        "neutral": ["Documentary", "Drama", "Romance"]
+        "neutral": ["Drama", "Comedy", "Romance", "Action", "Adventure"],
+        "angry": ["Documentary", "Drama", "Romance"]
     }
     if mood =='fear':
         mood = 'sad'
