@@ -5,9 +5,9 @@ from fastapi import FastAPI,UploadFile
 from fastapi.responses import JSONResponse
 from .model import model
 from . import schemas
-app = FastAPI(response_model= schemas.movies_and_songs,tags=["Movies & Songs Recommendation"])
+app = FastAPI(tags=["Movies & Songs Recommendation"])
 
-@app.post("/image")
+@app.post("/image",response_model= schemas.movies_and_songs)
 def image_analysis (image : UploadFile,audio: UploadFile):
     try:
         start_time = time.time()  # Start time
@@ -43,7 +43,7 @@ def image_analysis (image : UploadFile,audio: UploadFile):
 
 
 
-@app.post("/video")
+@app.post("/video",response_model= schemas.movies_and_songs)
 def image_analysis (video:UploadFile):
     try:
         start_time = time.time()  # Start time
